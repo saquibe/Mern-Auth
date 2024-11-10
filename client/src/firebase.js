@@ -15,3 +15,17 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
+
+// rules_version = '2';
+
+// service firebase.storage {
+//   match /b/{bucket}/o {
+//     match /{allPaths=**} {
+//       allow read; // Allows all reads
+//       allow write: if
+//         request.resource.size < 2 * 1024 * 1024 && // Limit file size to 2 MB
+//         request.resource.contentType.matches('image/.*') && // Only allow image files
+//         request.auth != null; // Only authenticated users can upload
+//     }
+//   }
+// }
