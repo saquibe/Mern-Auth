@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import userRotes from "./routes/user.route.js";
 import authRotes from "./routes/auth.route.js";
+import cookieParser from "cookie-parser";
 dotenv.config();
 
 mongoose
@@ -20,6 +21,7 @@ app.use(express.json());
 
 app.use("/api/user", userRotes);
 app.use("/api/auth", authRotes);
+app.use(cookieParser());
 
 //middleware
 app.use((err, req, res, next) => {
