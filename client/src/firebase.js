@@ -29,3 +29,16 @@ export const app = initializeApp(firebaseConfig);
 //     }
 //   }
 // }
+
+
+// const firebaseConfig = {
+//   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+//   authDomain: "mern-estate-39d91.firebaseapp.com",
+//   projectId: "mern-estate-39d91",
+//   storageBucket: "mern-estate-39d91.appspot.com",
+//   messagingSenderId: "255263261115",
+//   appId: "1:255263261115:web:ff4dcd9b110a0ae1df449e"
+// };
+
+// // Initialize Firebase
+// export const app = initializeApp(firebaseConfig);
